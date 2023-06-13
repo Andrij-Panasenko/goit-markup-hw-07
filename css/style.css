@@ -21,7 +21,7 @@ img {
 }
 
 .container {
-    width: 1158px;
+    width: 426px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -29,8 +29,8 @@ img {
 }
 
 .section {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 .visually-hidden {
@@ -56,6 +56,7 @@ img {
 
 /** ---------------------here is tag 'p'--------------------- **/
 .text-style {
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -63,9 +64,9 @@ img {
 
 /** ---------------------here is tag 'h3'--------------------- */
 .list-header {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
     letter-spacing: 0.02em
 }
 
@@ -384,12 +385,14 @@ body {
 
 .features-list {
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    row-gap: 72px;
 
 }
 
 .features-item {
-    width: calc((100% - 72px) / 4);
+    /* width: calc((100% - 72px) / 4); */
+    width: 396px;
 }
 
 .features-item .div {
@@ -404,10 +407,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    display: none;
 }
 
 .features-header {
     color: var(--navy-blue-color);
+    text-align: center;
     margin-bottom: 8px;
 }
 

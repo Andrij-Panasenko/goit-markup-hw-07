@@ -1,0 +1,56 @@
+/** Features media begins */
+/** Брейкпоінти 426px, 766px і 1158px. */
+
+/** Features tablet 766px begins */
+@media screen and (min-width: 766px) {
+    .features > .container {
+        width: 766px;
+    }
+
+    .features-list {
+        column-gap: 24px;
+    }
+
+    .features-item {
+        width: 356px;
+    }
+
+    .features-header {
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .features > .container {
+        width: 1158px;
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .features .div {
+        background-color: var(--filter-button-bgrnd-color);
+        border-radius: 4px;
+        
+        width: 264px;
+        height: 112px;
+        margin-bottom: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .list-header {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+    .text-style {
+        font-weight: 400;
+    }
+
+    .features-item {
+    width: calc((100% - 72px) / 4);
+       
+    }
+}
