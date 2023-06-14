@@ -1,5 +1,9 @@
 /** Брейкпоінти 426px, 766px і 1158px. */
-
+@media screen and (min-width: 428px) {
+    .container {
+        width: 428px;
+    }
+}
 
 /** Tablet 766px begins */
 @media screen and (min-width: 766px) {
@@ -23,12 +27,19 @@
 
     /** Our team begins */
     .team .container {
-        width: 766px;
+        width: calc(264px * 2 + 24px + 30px);
     }
 
     .team-list {
+        display: flex;
+        flex-wrap: wrap;
         justify-content: center;
         column-gap: 24px;
+        row-gap: 64px;
+    }
+
+    .team-item {
+        margin-bottom: 0;
     }
     /** Our team ends */
 
