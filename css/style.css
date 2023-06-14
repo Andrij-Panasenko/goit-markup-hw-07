@@ -332,8 +332,10 @@ body {
     padding-top: 188px;
     padding-bottom: 188px;
 
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url('../images/hero-img.jpg');
+    background-image: linear-gradient(
+                    rgba(46, 47, 66, 0.7), 
+                    rgba(46, 47, 66, 0.7)),
+                    url('../images/hero-img.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -423,7 +425,7 @@ body {
 
 /** ---------------------Section 3 services begins--------------------- */
 .services {
-    padding-top: 0;
+    display: none;
 }
 
 .services-header {

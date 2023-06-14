@@ -24,10 +24,13 @@
 /** Media desktop begins */
 @media screen and (min-width: 1158px) {
     /** Features begins */
-    .features > .container {
-        width: 1158px;
+    .section {
         padding-top: 120px;
         padding-bottom: 120px;
+    }
+
+    .features > .container {
+        width: 1158px;
     }
 
     .features .div {
@@ -57,4 +60,32 @@
        
     }
     /** Features ends */
+    /** Section 3 services begins  */
+    
+    .services {
+        display: block;
+        padding-top: 0;
+    }
+
+    .services > .container {
+        width: 1158px;
+    }
+
+    .services-header {
+        color: var(--navy-blue-color);
+        font-size: 36px;
+        line-height: 1.11;
+        text-align: center;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+
+        margin-bottom: 72px;
+}
+
+    .services-list {
+        display: flex;
+        gap: 24px;
+    }
+    
+
 }
