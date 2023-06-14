@@ -25,7 +25,7 @@ img {
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-    /* outline: 2px solid red; */
+    outline: 2px solid red;
 }
 
 .section {
@@ -428,30 +428,18 @@ body {
     display: none;
 }
 
-.services-header {
-    color: var(--navy-blue-color);
-    font-size: 36px;
-    line-height: 1.11;
-    text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-
-    margin-bottom: 72px;
-}
-
-.services-list {
-    display: flex;
-    gap: 24px;
-}
-
 /** ---------------------Section 4 Our Team begins--------------------- */
 .team {
     background-color: #F4F4FD;
+}
 
+.team .container {
+    width: calc(264px + 15px * 2);
 }
 
 .team-header {
     color: var(--navy-blue-color);
+    font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
@@ -463,7 +451,8 @@ body {
 
 .team-list {
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    row-gap: 72px;
 }
 
 .team-item {
@@ -489,6 +478,7 @@ body {
 }
 
 .team-text-item {
+    font-weight: 400;
     color: var(--text-color);
     margin-bottom: 8px;
 }
@@ -549,11 +539,13 @@ body {
 
 .customers-list {
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    column-gap: 16px;
+    row-gap: 72px;
 }
 
 .customers-item {
-    width: calc((100% - 120px) / 6);
+    width: calc((100% - 16px) / 2);
     height: 88px;
 }
 
