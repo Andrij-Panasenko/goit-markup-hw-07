@@ -5,7 +5,7 @@
     }
 }
 
-/** Tablet 766px begins */
+/** -----------------------Tablet 766px begins----------------------- */
 @media screen and (min-width: 766px) {
     .container {
         width: 766px;
@@ -84,7 +84,7 @@
 
 }
 
-/** Media desktop begins */
+/** -----------------------Desktop 1158 begins----------------------- */
 @media screen and (min-width: 1158px) {
     .container {
         width: 1158px;
@@ -99,11 +99,26 @@
     background-image: linear-gradient(
                     rgba(46, 47, 66, 0.7), 
                     rgba(46, 47, 66, 0.7)),
-                    url('../images/hero-img.jpg');
+                    url('../images/desktop-hero-bg.jpg');
     max-width: 1440px;
 
     }
 
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+                    rgba(46, 47, 66, 0.7), 
+                    rgba(46, 47, 66, 0.7)),
+                    url('../images/desktop-hero-bg-2x.jpg');
+  }
+}
+
+    .hero-header {
+        margin-bottom: 48px;
+        max-width: 496px;
+    }
 
     /** Hero ends */
 
