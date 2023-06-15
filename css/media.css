@@ -1,22 +1,24 @@
 /** Брейкпоінти 426px, 766px і 1158px. */
 @media screen and (min-width: 428px) {
-    .container {
-        width: 428px;
-    }
+  .container {
+    width: 428px;
+  }
 }
 
 /** -----------------------Tablet 766px begins----------------------- */
 @media screen and (min-width: 766px) {
-    .container {
-        width: 766px;
-    }
-    /** Hero begins */
+  .container {
+    width: 766px;
+  }
+
+  /** Hero begins */
 
   .hero {
     background-image: linear-gradient(
-                    rgba(46, 47, 66, 0.7), 
-                    rgba(46, 47, 66, 0.7)),
-                    url('../images/tablet-hero-bg.jpg');
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/tablet-hero-bg.jpg");
     max-width: 768px;
   }
 
@@ -27,177 +29,264 @@
     margin-bottom: 36px;
   }
 
-
-@media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-  .hero {
-    background-image: linear-gradient(
-                    rgba(46, 47, 66, 0.7), 
-                    rgba(46, 47, 66, 0.7)),
-                    url('../images/tablet-hero-bg-2x.jpg');
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/tablet-hero-bg-2x.jpg");
+    }
   }
-}
-    /** Hero ends */
-    /** Features begins */
 
-    .features-list {
-        column-gap: 24px;
-    }
+  /** Hero ends */
+  /** Features begins */
 
-    .features-item {
-        width: 356px;
-    }
+  .features-list {
+    column-gap: 24px;
+  }
 
-    .features-header {
-        text-align: left;
-    }
-    /** Features ends */
+  .features-item {
+    width: 356px;
+  }
 
-    /** Our team begins */
-    .team .container {
-        width: calc(264px * 2 + 24px + 30px);
-    }
+  .features-header {
+    text-align: left;
+  }
 
-    .team-list {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        column-gap: 24px;
-        row-gap: 64px;
-    }
+  /** Features ends */
 
-    .team-item {
-        margin-bottom: 0;
-    }
-    /** Our team ends */
+  /** Our team begins */
+  .team .container {
+    width: calc(264px * 2 + 24px + 30px);
+  }
 
-    /** Customers begins */
-    .customers-list {
-        column-gap: 24px;
-    }
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 24px;
+    row-gap: 64px;
+  }
 
-    .customers-item {
-        width: calc((100% - 48px) / 3);
-    }
-    /** Customers ends */
+  .team-item {
+    margin-bottom: 0;
+  }
 
+  /** Our team ends */
+
+  /** Customers begins */
+  .customers-list {
+    column-gap: 24px;
+  }
+
+  .customers-item {
+    width: calc((100% - 48px) / 3);
+  }
+
+  /** Customers ends */
 }
 
 /** -----------------------Desktop 1158 begins----------------------- */
 @media screen and (min-width: 1158px) {
-    .container {
-        width: 1158px;
-    }
+  .container {
+    width: 1158px;
+  }
 
-    /** Hero begins */
-    .hero {
-    background-color: #2E2F42;
+  .header .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header-nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-list {
+    display: flex;
+    gap: 40px;
+  }
+
+  .nav-item {
+    color: var(--navy-blue-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+
+    display: block;
+    padding: 24px 0;
+    position: relative;
+
+    /* transition-property: color; */
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .current {
+    color: #404bbf;
+  }
+
+  .nav-item.current::after {
+    content: "";
+    background-color: #404bbf;
+    display: block;
+    position: absolute;
+
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    left: 0;
+    bottom: -1px;
+  }
+
+  .nav-item:hover,
+  .nav-item:focus {
+    color: #404bbf;
+  }
+
+  .address {
+    font-style: normal;
+  }
+
+  .address-list {
+    display: flex;
+    gap: 40px;
+  }
+
+  .address-item {
+    color: #434455;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+
+    display: block;
+    padding: 24px 0;
+
+    /* transition-property: color; */
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .address-item:hover,
+  .address-item:focus {
+    color: #404bbf;
+  }
+
+  /** Hero begins */
+  .hero {
+    background-color: #2e2f42;
     padding-top: 188px;
     padding-bottom: 188px;
 
     background-image: linear-gradient(
-                    rgba(46, 47, 66, 0.7), 
-                    rgba(46, 47, 66, 0.7)),
-                    url('../images/desktop-hero-bg.jpg');
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/desktop-hero-bg.jpg");
     max-width: 1440px;
-
-    }
-
-    @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-  .hero {
-    background-image: linear-gradient(
-                    rgba(46, 47, 66, 0.7), 
-                    rgba(46, 47, 66, 0.7)),
-                    url('../images/desktop-hero-bg-2x.jpg');
   }
-}
 
-    .hero-header {
-        margin-bottom: 48px;
-        max-width: 496px;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/desktop-hero-bg-2x.jpg");
     }
+  }
 
-    /** Hero ends */
+  .hero-header {
+    margin-bottom: 48px;
+    max-width: 496px;
+  }
 
-    /** Features begins */
-    .section {
-        padding-top: 120px;
-        padding-bottom: 120px;
-    }
+  /** Hero ends */
 
-    .features > .container {
-        width: 1158px;
-    }
+  /** Features begins */
+  .section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
 
-    .features .div {
-        background-color: var(--filter-button-bgrnd-color);
-        border-radius: 4px;
-        
-        width: 264px;
-        height: 112px;
-        margin-bottom: 8px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+  .features > .container {
+    width: 1158px;
+  }
 
-    .list-header {
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 1.2;
-    }
+  .features .div {
+    background-color: var(--filter-button-bgrnd-color);
+    border-radius: 4px;
 
-    .text-style {
-        font-weight: 400;
-    }
+    width: 264px;
+    height: 112px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .features-item {
+  .list-header {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .text-style {
+    font-weight: 400;
+  }
+
+  .features-item {
     width: calc((100% - 72px) / 4);
-       
-    }
-    /** Features ends */
-    /** Section 3 services begins  */
-    
-    .services {
-        display: block;
-        padding-top: 0;
-    }
+  }
 
-    .services > .container {
-        width: 1158px;
-    }
+  /** Features ends */
+  /** Section 3 services begins  */
 
-    .services-header {
-        color: var(--navy-blue-color);
-        font-size: 36px;
-        line-height: 1.11;
-        text-align: center;
-        letter-spacing: 0.02em;
-        text-transform: capitalize;
+  .services {
+    display: block;
+    padding-top: 0;
+  }
 
-        margin-bottom: 72px;
-}
+  .services > .container {
+    width: 1158px;
+  }
 
-    .services-list {
-        display: flex;
-        gap: 24px;
-    }
-        /** Section 3 services ends  */
+  .services-header {
+    color: var(--navy-blue-color);
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
 
-        /** Our team begins */
-        .team .container {
-            width: 1158px;
-            padding-left: 15px;
-            padding-right: 15px;
-        }
-        /** Our team ends */
+    margin-bottom: 72px;
+  }
 
-        /** Customers begins */
-        .customers-list {
-          flex-wrap: nowrap;  
-        }
-        /** Customers ends */
+  .services-list {
+    display: flex;
+    gap: 24px;
+  }
+
+  /** Section 3 services ends  */
+
+  /** Our team begins */
+  .team .container {
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  /** Our team ends */
+
+  /** Customers begins */
+  .customers-list {
+    flex-wrap: nowrap;
+  }
+
+  /** Customers ends */
 }
