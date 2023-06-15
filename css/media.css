@@ -10,6 +10,35 @@
     .container {
         width: 766px;
     }
+    /** Hero begins */
+
+  .hero {
+    background-image: linear-gradient(
+                    rgba(46, 47, 66, 0.7), 
+                    rgba(46, 47, 66, 0.7)),
+                    url('../images/tablet-hero-bg.jpg');
+    max-width: 768px;
+  }
+
+  .hero-header {
+    font-size: 56px;
+    line-height: 1.06;
+    max-width: 496px;
+    margin-bottom: 36px;
+  }
+
+
+@media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+                    rgba(46, 47, 66, 0.7), 
+                    rgba(46, 47, 66, 0.7)),
+                    url('../images/tablet-hero-bg-2x.jpg');
+  }
+}
+    /** Hero ends */
     /** Features begins */
 
     .features-list {
