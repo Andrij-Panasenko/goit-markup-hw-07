@@ -167,6 +167,9 @@
   /** Our team ends */
 
   /** Customers begins */
+  .customers .container {
+    width: 582px;
+  }
   .customers-list {
     column-gap: 24px;
   }
@@ -339,11 +342,37 @@
     padding-right: 15px;
   }
 
+  .social-item-link {
+    /* transition-property: background-color; */
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .social-item-link:hover,
+  .social-item-link:focus {
+    background-color: #404BBF;
+  }
+
   /** Our team ends */
 
   /** Customers begins */
-  .customers-list {
-    flex-wrap: nowrap;
+  .customers .container {
+    width: 1158px;
+  }
+
+  .customers-item {
+    width: calc((100% - 120px) / 6);
+  }
+
+  .customers-link {
+    /* transition-property: border-color, color; */
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .customers-link:hover,
+  .customers-link:focus {
+    border-color: #404BBF;
+    color: #404BBF;
   }
 
   /** Customers ends */
