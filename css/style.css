@@ -54,6 +54,10 @@ img {
     list-style: none;
 }
 
+.no-scroll {
+    overflow: hidden;
+}
+
 /** ---------------------here is tag 'p'--------------------- **/
 .text-style {
     font-weight: 500;
@@ -78,11 +82,10 @@ body {
 
 /** ---------------------Portfolio begins--------------------- */
 /** ---------------------Header begins--------------------- */
-.header {
-    border-bottom: 1px solid #E7E9FC;
-    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 
-                0px 1px 1px rgba(46, 47, 66, 0.16),
-                0px 1px 6px rgba(46, 47, 66, 0.08);
+.header .container {
+    padding: 24px 16px 22px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .logo {
@@ -105,7 +108,120 @@ body {
     font-family: 'Raleway';
 }
 
+.modal-menu.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
 
+}
+
+.button-menu-open {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+}
+
+.icon-menu-open {
+    fill: var(--navy-blue-color);
+}
+
+.modal-menu-close {
+    background-color: #E7E9FC1A;
+    padding: 0;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 24px;
+    height: 24px;
+
+    border: 1px solid #2E2F421A;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Колір заповнення свг-іконки */
+    color: var(--navy-blue-color);
+}
+.modal-menu-close-icon {
+    color: currentColor;
+}
+
+.nav-list {
+    display: none;
+}
+
+.address {
+    display: none;
+}
+
+.modal-menu {
+    background-color: #ffffff;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+                0px 1px 1px rgba(46, 47, 66, 0.16), 
+                0px 1px 6px rgba(46, 47, 66, 0.08);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 80px 35px 40px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    transition: opacity 200ms linear,
+                visibility 200ms linear;
+}
+
+.modal-nav-list li:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.modal-nav-item {
+    color: var(--navy-blue-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+}
+
+.current {
+    color: #404BBF;
+}
+
+.modal-address {
+}
+.modal-address-list {
+}
+
+.modal-tel {
+    color: #4D5AE5;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    display: block;
+    margin-bottom: 40px;
+}
+
+.modal-mail {
+    color: var(--text-color);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+
+    display: block;
+    margin-bottom: 48px;
+}
+
+.social-modal-menu-list {
+    max-width: 328px;
+    display: flex;
+    justify-content: space-between;
+}
 
 /** ---------------------Filter buttons portfolio begins--------------------- */
 .portfolio-section {
