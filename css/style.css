@@ -170,6 +170,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    overflow: scroll;
 
     transition: opacity 200ms linear,
                 visibility 200ms linear;
@@ -189,11 +190,6 @@ body {
 
 .current {
     color: #404BBF;
-}
-
-.modal-address {
-}
-.modal-address-list {
 }
 
 .modal-tel {
@@ -419,17 +415,8 @@ body {
     border: none;
     display: block;
     margin: 0 auto;
-
-    /* transition-property: background-color; */
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
-
-.hero-button:hover,
-.hero-button:focus {
-    background-color: #404BBF;
-}
 
 /** ---------------------Section 2 our features begins--------------------- */
 
