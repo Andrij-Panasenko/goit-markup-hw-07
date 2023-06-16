@@ -601,16 +601,27 @@ body {
 .footer {
     background-color: var(--navy-blue-color);
 
-    padding: 100px 0;
+    padding: 96px 0;
 }
 
 .footer .container {
+    display: block;
+    width: 100%;
+    /* max-width: 428px;
     display: flex;
-    align-items: baseline;
+    flex-direction: column;
+    gap: 72px;
+    flex-wrap: wrap;
+    align-items: center;
+ align-items: baseline; */
+
 }
 
 .footer-disclaimer {
-    margin-right: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 72px;
 }
 
 .footer-logo {
@@ -619,14 +630,12 @@ body {
     font-weight: 800;
     font-size: 18px;
     line-height: 1.17;
-    display: flex;
-    align-items: center;
+    /* display: flex;
+    align-items: center; */
     letter-spacing: 0.03em;
     text-transform: uppercase;
-
-    margin-bottom: 16px;
-
     display: inline-block;
+    margin-bottom: 16px;
 }
 
 .logo-footer-second-part {
@@ -636,10 +645,19 @@ body {
 
 .footer-paragraph {
     color: #F4F4FD;
-    max-width: 264px;
+    font-weight: 400;
+    max-width: 268px;
 }
 
 /** ---------------------Footer socials begins--------------------- */
+
+.social-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 208px;
+    margin: 0 auto 72px;
+}
 
 .social-footer-title {
     color: #fff;
@@ -689,7 +707,10 @@ body {
 
 /** ---------------------Subscribe footer begins--------------------- */
 .subscribe{
-    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
 .subs-text {
@@ -704,7 +725,15 @@ body {
 
 .footer-form {
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    width: 100%;
+    max-width: 428px;
+}
+
+.footer-label {
+    width: 100%;
 }
 
 .footer-input {
@@ -714,7 +743,9 @@ body {
     background-color: transparent;
     border-radius: 4px;
     color: #ffffff;
-    width: 264px;
+
+    width: 100%;
+    max-width: 398px;
     height: 40px;
     padding: 8px 16px;
     font-size: 12px;
