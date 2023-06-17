@@ -809,9 +809,11 @@ body {
 
 .modal {
     background-color: #FCFCFC;
-    width: 408px;
+    width: 92%;
+    max-width: 392px;
     min-height: 584px;
-    padding: 72px 24px 24px;
+    padding: 72px 16px 24px;
+    overflow-y: auto;
 
     border-radius: 4px;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 
