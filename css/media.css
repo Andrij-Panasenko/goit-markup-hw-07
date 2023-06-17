@@ -20,7 +20,7 @@
   .modal-menu {
     display: none;
   }
-  
+
   .logo {
     margin-right: 120px;
   }
@@ -60,7 +60,7 @@
   }
 
   .current {
-    color: #404BBF;
+    color: #404bbf;
   }
 
   .nav-item.current::after {
@@ -179,6 +179,40 @@
   }
 
   /** Customers ends */
+
+  /** Footer begins */
+  .footer .container {
+    width: 582px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+
+  .footer-disclaimer {
+    display: block;
+    margin-bottom: 0;
+  }
+
+  .social-footer {
+    display: block;
+    margin: 0;
+  }
+
+  .subscribe {
+    display: block;
+  }
+
+  .footer-form {
+    max-width: 453px;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+
+  .footer-input {
+    width: 264px;
+  }
+  /** Footer ends */
 }
 
 /** -----------------------Desktop 1158 begins----------------------- */
@@ -187,14 +221,13 @@
     max-width: 1158px;
   }
 
-/* * ----------------------- Header begins ----------------------- */
+  /* * ----------------------- Header begins ----------------------- */
 
-.header {
-    border-bottom: 1px solid #E7E9FC;
-    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 
-                0px 1px 1px rgba(46, 47, 66, 0.16),
-                0px 1px 6px rgba(46, 47, 66, 0.08);
-}
+  .header {
+    border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  }
 
   .address-list {
     gap: 40px;
@@ -203,7 +236,7 @@
   }
 
   .nav-item {
-     /* transition-property: color; */
+    /* transition-property: color; */
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
@@ -264,8 +297,8 @@
 
   .hero-button:hover,
   .hero-button:focus {
-    background-color: #404BBF;
-}
+    background-color: #404bbf;
+  }
 
   /** Hero ends */
 
@@ -349,7 +382,7 @@
 
   .social-item-link:hover,
   .social-item-link:focus {
-    background-color: #404BBF;
+    background-color: #404bbf;
   }
 
   /** Our team ends */
@@ -366,13 +399,13 @@
   .customers-link {
     /* transition-property: border-color, color; */
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-                color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .customers-link:hover,
   .customers-link:focus {
-    border-color: #404BBF;
-    color: #404BBF;
+    border-color: #404bbf;
+    color: #404bbf;
   }
 
   /** Customers ends */
