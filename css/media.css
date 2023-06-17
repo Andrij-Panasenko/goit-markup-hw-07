@@ -414,4 +414,30 @@
   }
 
   /** Customers ends */
+
+  /** Footer begins */
+  .footer {
+    padding: 100px 0;
+  }
+
+  .footer .container {
+    width: 1158px;
+    align-items: baseline;
+    gap: 0;
+  }
+
+  .footer-disclaimer {
+    margin-right: 120px;
+  }
+
+  .footer-paragraph {
+    max-width: 264px;
+  }
+
+  .subscribe {
+    width: 453px;
+    margin-left: auto;
+  }
+  /** Footer ends */
+
 }
