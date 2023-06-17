@@ -207,9 +207,14 @@
     max-width: 453px;
     flex-wrap: nowrap;
     justify-content: flex-start;
+    gap: 24px;
   }
 
   .footer-input {
+    width: 264px;
+  }
+
+  .footer-label {
     width: 264px;
   }
   /** Footer ends */
