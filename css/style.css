@@ -25,7 +25,7 @@ img {
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-    outline: 2px solid red;
+    /* outline: 2px solid red; */
 }
 
 .section {
@@ -587,15 +587,11 @@ body {
     border: 1px solid #8E8F99;
     border-radius: 4px;
     color: var(--soc-icon-color);
-
-    
 }
 
 .customers-icon {
     fill: currentColor;
 }
-
-
 
 /** ---------------------Footer begins--------------------- */
 .footer {
@@ -630,8 +626,6 @@ body {
     font-weight: 800;
     font-size: 18px;
     line-height: 1.17;
-    /* display: flex;
-    align-items: center; */
     letter-spacing: 0.03em;
     text-transform: uppercase;
     display: inline-block;
@@ -689,19 +683,13 @@ body {
     align-items: center;
     justify-content: center;
 
-    /* transition-property: background-color; */
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 .social-footer-icon {
     fill: #F4F4FD;
     width: 24px;
     height: 24px;
-}
-
-.social-footer-link:hover,
-.social-footer-link:focus {
-    background-color: #31D0AA;
 }
 
 /** ---------------------Subscribe footer begins--------------------- */
@@ -777,13 +765,6 @@ body {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.button-footer-submit:hover,
-.button-footer-submit:focus {
-    background-color: #404bbf;
 }
 
 .button-submit-icon {

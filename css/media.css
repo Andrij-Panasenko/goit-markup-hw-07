@@ -442,10 +442,30 @@
     max-width: 264px;
   }
 
+  .social-footer-item {
+    /* transition-property: background-color; */
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .social-footer-link:hover,
+  .social-footer-link:focus {
+    background-color: #31D0AA;
+  }
+
   .subscribe {
     width: 453px;
     margin-left: auto;
   }
+
+  .button-footer-submit {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .button-footer-submit:hover,
+  .button-footer-submit:focus {
+    background-color: #404bbf;
+  }
+
   /** Footer ends */
 
 }
