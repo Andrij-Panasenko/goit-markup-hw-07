@@ -218,6 +218,14 @@
     width: 264px;
   }
   /** Footer ends */
+
+  /** Modal begins */
+  .modal {
+    padding: 72px 24px 24px;
+    max-width: 408px;
+  }
+  /** Modal ends */
+
 }
 
 /** -----------------------Desktop 1158 begins----------------------- */
