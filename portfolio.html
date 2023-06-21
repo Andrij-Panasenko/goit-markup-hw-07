@@ -17,6 +17,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/media.css">
     <title>Portfolio</title>
   </head>
 
@@ -28,13 +29,13 @@
             >Web<span class="logo-second-part">Studio</span></a
           >
           <ul class="nav-list list">
-            <li class="item">
-              <a href="./index.html" class="nav-item link">Studio</a>
+            <li>
+              <a href="./index.html" class="nav-item link current">Studio</a>
             </li>
-            <li class="item">
-              <a href="./portfolio.html" class="nav-item link current">Portfolio</a>
+            <li>
+              <a href="./portfolio.html" class="nav-item link">Portfolio</a>
             </li>
-            <li class="item">
+            <li>
               <a href="" class="nav-item link">Contacts</a>
             </li>
           </ul>
@@ -54,6 +55,98 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="button-menu-open" data-menu-open>
+          <svg width="32" height="22" class="icon-menu-open">
+            <use href="./images/icons.svg#icon-menu-open"></use>
+          </svg>
+        </button>
+      </div>
+
+      <!--* Modal menu begins -->
+      <div class="modal-menu is-hidden" data-menu>
+        <button type="button" class="modal-menu-close" data-menu-close>
+          <svg width="8" height="8" class="modal-menu-close-icon">
+            <use href="./images/icons.svg#close"></use>
+          </svg>
+        </button>
+        <ul class="modal-nav-list list">
+          <li>
+            <a href="./index.html" class="modal-nav-item link current"
+              >Studio</a
+            >
+          </li>
+          <li>
+            <a href="./portfolio.html" class="modal-nav-item link">Portfolio</a>
+          </li>
+          <li>
+            <a href="" class="modal-nav-item link">Contacts</a>
+          </li>
+        </ul>
+        <div>
+          <address class="modal-address">
+            <ul class="modal-address-list list">
+              <li>
+                <a href="tel:+110001111111" class="modal-tel link"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li>
+                <a href="mailto:info@devstudio.com" class="modal-mail link"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+
+          <!--* Social list. Took from footer -->
+
+          <ul class="social-modal-menu-list list">
+            <li class="social-footer-item">
+              <a
+                href=""
+                rel="noopener noreferrer"
+                class="social-footer-link link"
+              >
+                <svg class="social-footer-icon" width="24" height="24">
+                  <use href="./images/icons.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-footer-item">
+              <a
+                href=""
+                rel="noopener noreferrer"
+                class="social-footer-link link"
+              >
+                <svg class="social-footer-icon" width="24" height="24">
+                  <use href="./images/icons.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-footer-item">
+              <a
+                href=""
+                rel="noopener noreferrer"
+                class="social-footer-link link"
+              >
+                <svg class="social-footer-icon" width="24" height="24">
+                  <use href="./images/icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-footer-item">
+              <a
+                href=""
+                rel="noopener noreferrer"
+                class="social-footer-link link"
+              >
+                <svg class="social-footer-icon" width="24" height="24">
+                  <use href="./images/icons.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -272,5 +365,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

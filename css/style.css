@@ -82,6 +82,12 @@ body {
 
 /** ---------------------Portfolio begins--------------------- */
 /** ---------------------Header begins--------------------- */
+.header {
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+                0px 1px 1px rgba(46, 47, 66, 0.16), 
+                0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
 .header .container {
     padding: 24px 16px 22px;
     display: flex;
@@ -182,6 +188,7 @@ body {
                 0px 1px 1px rgba(46, 47, 66, 0.16), 
                 0px 1px 6px rgba(46, 47, 66, 0.08);
     position: fixed;
+    z-index: 100;
     top: 0;
     left: 0;
     width: 100vw;
