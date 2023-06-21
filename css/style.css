@@ -252,7 +252,6 @@ body {
 }
 
 .filter-list {
-
     display: flex;
     flex-wrap: wrap;
     justify-content: left;
@@ -298,7 +297,6 @@ body {
 
 /** ---------------------Portfolio begins--------------------- */
 .portfolio-list {
-    list-style: none;
     text-decoration: none;
 
     display: flex;
