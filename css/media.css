@@ -223,6 +223,34 @@
     max-width: 408px;
   }
   /** Modal ends */
+
+  /** ---------- Portfolio begins ---------- */
+  .portfolio-section {
+    padding-top: 64px;
+    padding-bottom: 96px;
+  }
+
+  .filter-list {
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 64px;
+  }
+
+  .filter-button {
+    padding: 12px 24px;
+  }
+
+  .portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+
+  .portfolio-item {
+    width: calc((100% - 24px) / 2);
+  }
 }
 
 /** -----------------------Desktop 1158 begins----------------------- */
@@ -399,4 +427,25 @@
   }
   /** Footer ends */
 
+  /** ---------- Portfolio begins ---------- */
+  .portfolio-section {
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
+
+  .filter-list {
+    margin-bottom: 72px;
+  }
+
+  .filter-button {
+    letter-spacing: 0.02em;
+  }
+
+  .portfolio-list {
+    row-gap: 48px;
+  }
+
+  .portfolio-item {
+    width: calc((100% - 48px) / 3);
+  }
 }
