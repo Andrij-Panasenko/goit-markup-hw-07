@@ -250,6 +250,7 @@
 
   .portfolio-item {
     width: calc((100% - 24px) / 2);
+    margin: 0;
   }
 }
 
