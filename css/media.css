@@ -376,8 +376,8 @@
     display: flex;
     gap: 24px;
   }
-
   /** Section 3 services ends  */
+
 
   /** Our team begins */
   .team .container {
@@ -385,10 +385,10 @@
     padding-left: 15px;
     padding-right: 15px;
   }
+  /** Our team ends */
 
   
 
-  /** Our team ends */
 
   /** Customers begins */
   .customers .container {
@@ -398,10 +398,10 @@
   .customers-item {
     width: calc((100% - 120px) / 6);
   }
-
-
-
   /** Customers ends */
+
+
+
 
   /** Footer begins */
   .footer {
